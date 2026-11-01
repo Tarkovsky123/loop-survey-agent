@@ -1,0 +1,7 @@
+{"step": "load", "ms": 2.8, "accounts": 24, "orders": 344, "responses": 73, "approvals": 2, "backend": "codex"}
+{"step": "combine", "ms": 2.6, "with_device": 6, "held_texts": 0}
+{"step": "survey", "ms": 0.1, "sent": 5, "rejected": 1, "skipped": 2}
+{"step": "llm_fallback", "backend": "codex", "error": "FileNotFoundError", "ms": 4.8}
+{"step": "classify", "ms": 5.5, "mode": "rule"}
+{"step": "llm_fallback", "backend": "codex", "error": "FileNotFoundError", "ms": 3.4}
+{"step": "propose", "ms": 4.4, "proposals": 11, "holdout": 2, "guard_hold": 0, "mode": "rule/rule"}

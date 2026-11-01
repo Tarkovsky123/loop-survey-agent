@@ -1,0 +1,15 @@
+q_id,kind,trigger,text,answer_type
+C1,core,,현재 한국후지필름 제품·서비스에 전반적으로 얼마나 만족하십니까?,1-5
+C2,core,,앞으로 3개월 안에 소모품을 계속 주문하실 의향은 어느 정도입니까?,1-5
+C3,core,,동료 사업자에게 한국후지필름을 추천할 의향은 어느 정도입니까?,0-10
+C4,core,,요즘 매장 운영에서 가장 어려운 점 한 가지는 무엇입니까?,text
+P_gap1,pulse,order_gap,최근 한 달 매장 손님 수는 어떻게 변했습니까?,늘었다/비슷하다/줄었다
+P_gap2,pulse,order_gap,주문이 줄어든 가장 큰 이유는 무엇입니까?,text
+P_gap_bad,pulse,order_gap,가격과 품질에 모두 만족하십니까?,1-5
+P_as1,pulse,as_done,이번 A/S 처리에 얼마나 만족하십니까?,1-5
+P_as2,pulse,as_done,A/S 이후 아직 불편한 점이 있다면 알려 주세요.,text
+P_inst1,pulse,install_30,설치 후 한 달 동안 기대한 만큼 손님이 이용했습니까?,1-5
+P_inst2,pulse,install_30,운영에 가장 필요한 지원 한 가지는 무엇입니까?,text
+P_dev_bad,pulse,device_drop,요즘 손님이 줄어서 많이 힘드시죠?,text
+P_dev1,pulse,device_drop,최근 손님들이 가장 자주 하는 이야기는 무엇입니까?,text
+P_dev2,pulse,device_drop,최근 프레임·가격·운영 시간 중 바꾼 것이 있습니까?,있다/없다

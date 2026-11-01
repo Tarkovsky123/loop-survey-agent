@@ -1,0 +1,2 @@
+{"ts": "2026-11-01 13:37:01", "kind": "survey_send", "account_id": "A08", "by": "박영업", "questions": ["P_gap1", "P_gap2"], "note": "주문 지연 트리거 설문"}
+{"ts": "2026-11-01 13:38:07", "kind": "action_exec", "account_id": "A08", "action_id": "ACT06", "by": "박영업", "note": ""}

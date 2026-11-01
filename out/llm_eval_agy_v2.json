@@ -1,0 +1,236 @@
+{
+ "backend": "agy",
+ "model": "Gemini (gemini-4-argon-high, Antigravity CLI)",
+ "ran_at": "2026-10-31 21:15",
+ "classify": {
+  "seconds": 106.9,
+  "n": 18,
+  "returned": 18,
+  "exact_match": 15,
+  "mean_jaccard": 0.889,
+  "items": [
+   {
+    "id": "A01-C4",
+    "text": "기계가 자꾸 멈춰서 손님이 그냥 나가요. 요즘 손님도 줄었어요",
+    "rule": [
+     "고객 감소",
+     "기기 고장"
+    ],
+    "llm": [
+     "고객 감소",
+     "기기 고장"
+    ],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A02-C4",
+    "text": "프레임이 다 비슷해서 단골이 식상해해요",
+    "rule": [
+     "콘텐츠 식상"
+    ],
+    "llm": [
+     "콘텐츠 식상"
+    ],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A03-C4",
+    "text": "주말에는 대기줄이 생길 정도예요",
+    "rule": [
+     "수요 증가"
+    ],
+    "llm": [
+     "수요 증가"
+    ],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A04-C4",
+    "text": "손님이 많아서 2호점을 고민 중입니다",
+    "rule": [
+     "수요 증가",
+     "확장 의향"
+    ],
+    "llm": [
+     "확장 의향"
+    ],
+    "exact": false,
+    "jaccard": 0.5
+   },
+   {
+    "id": "A05-C4",
+    "text": "수리가 빨라서 좋았어요",
+    "rule": [],
+    "llm": [],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A06-C4",
+    "text": "특별한 불편은 없어요",
+    "rule": [],
+    "llm": [],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A08-C4",
+    "text": "인화지 값이 올라서 촬영 가격을 올려야 하나 고민이에요",
+    "rule": [
+     "가격 고민"
+    ],
+    "llm": [
+     "가격 고민"
+    ],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A09-C4",
+    "text": "무난합니다",
+    "rule": [],
+    "llm": [],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A10-C4",
+    "text": "관광객 많은 달은 좋아요",
+    "rule": [],
+    "llm": [],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A11-C4",
+    "text": "인화 손님이 줄어서 셀프 촬영존을 들일지 고민입니다",
+    "rule": [
+     "고객 감소",
+     "업태 전환"
+    ],
+    "llm": [
+     "고객 감소",
+     "업태 전환"
+    ],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A12-C4",
+    "text": "졸업 시즌 증명사진이 바빠요",
+    "rule": [
+     "수요 증가"
+    ],
+    "llm": [
+     "수요 증가"
+    ],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A13-C4",
+    "text": "롤러 점검 후 괜찮아졌어요",
+    "rule": [],
+    "llm": [],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A14-C4",
+    "text": "괜찮습니다",
+    "rule": [],
+    "llm": [],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A19-C4",
+    "text": "매장들 주문이 줄어서 재고가 많이 남아요",
+    "rule": [
+     "고객 감소",
+     "재고 부담"
+    ],
+    "llm": [
+     "재고 부담"
+    ],
+    "exact": false,
+    "jaccard": 0.5
+   },
+   {
+    "id": "A20-C4",
+    "text": "배송만 조금 빨랐으면 해요",
+    "rule": [
+     "배송 불만"
+    ],
+    "llm": [
+     "배송 불만"
+    ],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A21-C4",
+    "text": "거래처가 늘고 있어요",
+    "rule": [
+     "수요 증가"
+    ],
+    "llm": [],
+    "exact": false,
+    "jaccard": 0.0
+   },
+   {
+    "id": "A22-C4",
+    "text": "행사 일정이 몰릴 때 렌탈이 부족해요",
+    "rule": [
+     "수요 증가"
+    ],
+    "llm": [
+     "수요 증가"
+    ],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A06-P_dev1",
+    "text": "요즘 커플 손님이 늘었어요",
+    "rule": [
+     "수요 증가"
+    ],
+    "llm": [
+     "수요 증가"
+    ],
+    "exact": true,
+    "jaccard": 1.0
+   }
+  ]
+ },
+ "generate": {
+  "skipped": true,
+  "seconds": 0,
+  "n": 0,
+  "returned": 0,
+  "exact_match": 0,
+  "mean_jaccard": 0,
+  "passed": 0,
+  "flagged": 0,
+  "items": [],
+  "questions": [],
+  "drafts": []
+ },
+ "draft": {
+  "skipped": true,
+  "seconds": 0,
+  "n": 0,
+  "returned": 0,
+  "exact_match": 0,
+  "mean_jaccard": 0,
+  "passed": 0,
+  "flagged": 0,
+  "items": [],
+  "questions": [],
+  "drafts": []
+ }
+}

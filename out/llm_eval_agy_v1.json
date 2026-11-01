@@ -1,0 +1,310 @@
+{
+ "backend": "agy",
+ "model": "Gemini (gemini-4-argon-high, Antigravity CLI)",
+ "ran_at": "2026-10-31 21:10",
+ "classify": {
+  "seconds": 109.8,
+  "n": 18,
+  "returned": 18,
+  "exact_match": 13,
+  "mean_jaccard": 0.778,
+  "items": [
+   {
+    "id": "A01-C4",
+    "text": "기계가 자꾸 멈춰서 손님이 그냥 나가요. 요즘 손님도 줄었어요",
+    "rule": [
+     "고객 감소",
+     "기기 고장"
+    ],
+    "llm": [
+     "고객 감소",
+     "기기 고장"
+    ],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A02-C4",
+    "text": "프레임이 다 비슷해서 단골이 식상해해요",
+    "rule": [
+     "콘텐츠 식상"
+    ],
+    "llm": [
+     "콘텐츠 식상"
+    ],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A03-C4",
+    "text": "주말에는 대기줄이 생길 정도예요",
+    "rule": [
+     "수요 증가"
+    ],
+    "llm": [],
+    "exact": false,
+    "jaccard": 0.0
+   },
+   {
+    "id": "A04-C4",
+    "text": "손님이 많아서 2호점을 고민 중입니다",
+    "rule": [
+     "수요 증가",
+     "확장 의향"
+    ],
+    "llm": [
+     "확장 의향"
+    ],
+    "exact": false,
+    "jaccard": 0.5
+   },
+   {
+    "id": "A05-C4",
+    "text": "수리가 빨라서 좋았어요",
+    "rule": [],
+    "llm": [],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A06-C4",
+    "text": "특별한 불편은 없어요",
+    "rule": [],
+    "llm": [],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A08-C4",
+    "text": "인화지 값이 올라서 촬영 가격을 올려야 하나 고민이에요",
+    "rule": [
+     "가격 고민"
+    ],
+    "llm": [
+     "가격 고민"
+    ],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A09-C4",
+    "text": "무난합니다",
+    "rule": [],
+    "llm": [],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A10-C4",
+    "text": "관광객 많은 달은 좋아요",
+    "rule": [],
+    "llm": [],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A11-C4",
+    "text": "인화 손님이 줄어서 셀프 촬영존을 들일지 고민입니다",
+    "rule": [
+     "고객 감소",
+     "업태 전환"
+    ],
+    "llm": [
+     "고객 감소",
+     "업태 전환"
+    ],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A12-C4",
+    "text": "졸업 시즌 증명사진이 바빠요",
+    "rule": [
+     "수요 증가"
+    ],
+    "llm": [],
+    "exact": false,
+    "jaccard": 0.0
+   },
+   {
+    "id": "A13-C4",
+    "text": "롤러 점검 후 괜찮아졌어요",
+    "rule": [],
+    "llm": [],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A14-C4",
+    "text": "괜찮습니다",
+    "rule": [],
+    "llm": [],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A19-C4",
+    "text": "매장들 주문이 줄어서 재고가 많이 남아요",
+    "rule": [
+     "고객 감소",
+     "재고 부담"
+    ],
+    "llm": [
+     "재고 부담"
+    ],
+    "exact": false,
+    "jaccard": 0.5
+   },
+   {
+    "id": "A20-C4",
+    "text": "배송만 조금 빨랐으면 해요",
+    "rule": [
+     "배송 불만"
+    ],
+    "llm": [
+     "배송 불만"
+    ],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A21-C4",
+    "text": "거래처가 늘고 있어요",
+    "rule": [
+     "수요 증가"
+    ],
+    "llm": [
+     "수요 증가"
+    ],
+    "exact": true,
+    "jaccard": 1.0
+   },
+   {
+    "id": "A22-C4",
+    "text": "행사 일정이 몰릴 때 렌탈이 부족해요",
+    "rule": [
+     "수요 증가"
+    ],
+    "llm": [],
+    "exact": false,
+    "jaccard": 0.0
+   },
+   {
+    "id": "A06-P_dev1",
+    "text": "요즘 커플 손님이 늘었어요",
+    "rule": [
+     "수요 증가"
+    ],
+    "llm": [
+     "수요 증가"
+    ],
+    "exact": true,
+    "jaccard": 1.0
+   }
+  ]
+ },
+ "generate": {
+  "seconds": 68.2,
+  "n": 12,
+  "passed": 12,
+  "questions": [
+   {
+    "trigger": "order_gap",
+    "text": "최근 한 달간 키오스크 소모품 사용량은 평소와 비교해 어떻습니까?",
+    "answer_type": "늘었다/비슷하다/줄었다",
+    "issues": []
+   },
+   {
+    "trigger": "order_gap",
+    "text": "현재 소모품 주문 시스템의 이용 편의성을 어떻게 평가하십니까?",
+    "answer_type": "1-5",
+    "issues": []
+   },
+   {
+    "trigger": "order_gap",
+    "text": "최근 소모품 발주 주기에 변화가 생긴 주된 이유는 무엇입니까?",
+    "answer_type": "text",
+    "issues": []
+   },
+   {
+    "trigger": "as_done",
+    "text": "최근 완료된 A/S의 처리 속도를 어떻게 평가하십니까?",
+    "answer_type": "1-5",
+    "issues": []
+   },
+   {
+    "trigger": "as_done",
+    "text": "A/S 조치 이후 기기의 작동 상태를 어떻게 평가하십니까?",
+    "answer_type": "1-5",
+    "issues": []
+   },
+   {
+    "trigger": "as_done",
+    "text": "이번 A/S 처리 과정에서 보완이 필요한 사항은 무엇입니까?",
+    "answer_type": "text",
+    "issues": []
+   },
+   {
+    "trigger": "install_30",
+    "text": "설치 후 30일간 키오스크 운영 전반을 어떻게 평가하십니까?",
+    "answer_type": "1-5",
+    "issues": []
+   },
+   {
+    "trigger": "install_30",
+    "text": "키오스크의 최근 이용 빈도는 설치 초기와 비교해 어떻습니까?",
+    "answer_type": "늘었다/비슷하다/줄었다",
+    "issues": []
+   },
+   {
+    "trigger": "install_30",
+    "text": "키오스크 초기 운영과 관련해 추가로 필요한 지원은 무엇입니까?",
+    "answer_type": "text",
+    "issues": []
+   },
+   {
+    "trigger": "device_drop",
+    "text": "최근 4주간 매장의 전체 방문객 수는 이전과 비교해 어떻습니까?",
+    "answer_type": "늘었다/비슷하다/줄었다",
+    "issues": []
+   },
+   {
+    "trigger": "device_drop",
+    "text": "현재 키오스크의 기기 작동 상태를 어떻게 평가하십니까?",
+    "answer_type": "1-5",
+    "issues": []
+   },
+   {
+    "trigger": "device_drop",
+    "text": "최근 4주간 키오스크 인화량 변화에 영향을 준 요인은 무엇입니까?",
+    "answer_type": "text",
+    "issues": []
+   }
+  ]
+ },
+ "draft": {
+  "seconds": 25.4,
+  "n": 3,
+  "flagged": 0,
+  "drafts": [
+   {
+    "id": "A01",
+    "message": "성수 셀프사진관 사장님, 마지막 주문 후 59일이 경과하고 최근 4주 키오스크 인화 수량이 직전 4주 대비 24% 감소한 점과 정기 설문에서 기계 멈춤 및 손님 감소로 인한 어려움을 말씀해 주신 내용을 확인했습니다. 겪고 계신 기기 고장과 고객 감소 문제를 해결하시는 데 도움을 드리고자 선제 A/S 점검과 피크 시간·촬영 시간 조정에 관한 운영 가이드를 제안드립니다.",
+    "invented_numbers": [],
+    "overclaim": []
+   },
+   {
+    "id": "A11",
+    "message": "종로 사진관 사장님, 마지막 주문 후 89일이 지나고 최근 90일 주문액이 직전 90일 대비 75% 감소한 가운데, 정기 설문을 통해 인화 손님이 줄어 셀프 촬영존 도입을 고민 중이시라는 말씀을 확인했습니다. 사장님의 업태 전환 고민에 도움을 드리고자 셀프 촬영존·포토굿즈 전환 컨설팅을 제안드립니다.",
+    "invented_numbers": [],
+    "overclaim": []
+   },
+   {
+    "id": "A19",
+    "message": "경기 남부 대리점 사장님, 마지막 주문 후 89일이 경과하고 최근 90일 주문액이 직전 90일 대비 50% 감소한 상황과 정기 설문에서 매장들의 주문 감소로 재고가 많이 남는다고 전해주신 내용을 확인했습니다. 겪고 계신 재고 부담을 덜어드리기 위해 재고 회전 지원 및 소량 분할 주문을 제안드립니다.",
+    "invented_numbers": [],
+    "overclaim": []
+   }
+  ]
+ }
+}

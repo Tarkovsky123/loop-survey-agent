@@ -1,0 +1,125 @@
+[
+ {
+  "account_id": "A01",
+  "triggers": [
+   "order_gap",
+   "device_drop"
+  ],
+  "questions": [
+   {
+    "trigger": "order_gap",
+    "q_id": "P_gap1",
+    "kind": "pulse",
+    "text": "최근 한 달 매장 손님 수는 어떻게 변했습니까?",
+    "answer_type": "늘었다/비슷하다/줄었다"
+   },
+   {
+    "trigger": "order_gap",
+    "q_id": "P_gap2",
+    "kind": "pulse",
+    "text": "주문이 줄어든 가장 큰 이유는 무엇입니까?",
+    "answer_type": "text"
+   },
+   {
+    "trigger": "device_drop",
+    "q_id": "P_dev1",
+    "kind": "pulse",
+    "text": "최근 손님들이 가장 자주 하는 이야기는 무엇입니까?",
+    "answer_type": "text"
+   }
+  ],
+  "approved": false
+ },
+ {
+  "account_id": "A05",
+  "triggers": [
+   "as_done"
+  ],
+  "questions": [
+   {
+    "trigger": "as_done",
+    "q_id": "P_as1",
+    "kind": "pulse",
+    "text": "이번 A/S 처리에 얼마나 만족하십니까?",
+    "answer_type": "1-5"
+   },
+   {
+    "trigger": "as_done",
+    "q_id": "P_as2",
+    "kind": "pulse",
+    "text": "A/S 이후 아직 불편한 점이 있다면 알려 주세요.",
+    "answer_type": "text"
+   }
+  ],
+  "approved": false
+ },
+ {
+  "account_id": "A07",
+  "triggers": [
+   "install_30"
+  ],
+  "questions": [
+   {
+    "trigger": "install_30",
+    "q_id": "P_inst1",
+    "kind": "pulse",
+    "text": "설치 후 한 달 동안 기대한 만큼 손님이 이용했습니까?",
+    "answer_type": "1-5"
+   },
+   {
+    "trigger": "install_30",
+    "q_id": "P_inst2",
+    "kind": "pulse",
+    "text": "운영에 가장 필요한 지원 한 가지는 무엇입니까?",
+    "answer_type": "text"
+   }
+  ],
+  "approved": false
+ },
+ {
+  "account_id": "A11",
+  "triggers": [
+   "order_gap"
+  ],
+  "questions": [
+   {
+    "trigger": "order_gap",
+    "q_id": "P_gap1",
+    "kind": "pulse",
+    "text": "최근 한 달 매장 손님 수는 어떻게 변했습니까?",
+    "answer_type": "늘었다/비슷하다/줄었다"
+   },
+   {
+    "trigger": "order_gap",
+    "q_id": "P_gap2",
+    "kind": "pulse",
+    "text": "주문이 줄어든 가장 큰 이유는 무엇입니까?",
+    "answer_type": "text"
+   }
+  ],
+  "approved": false
+ },
+ {
+  "account_id": "A13",
+  "triggers": [
+   "as_done"
+  ],
+  "questions": [
+   {
+    "trigger": "as_done",
+    "q_id": "P_as1",
+    "kind": "pulse",
+    "text": "이번 A/S 처리에 얼마나 만족하십니까?",
+    "answer_type": "1-5"
+   },
+   {
+    "trigger": "as_done",
+    "q_id": "P_as2",
+    "kind": "pulse",
+    "text": "A/S 이후 아직 불편한 점이 있다면 알려 주세요.",
+    "answer_type": "text"
+   }
+  ],
+  "approved": false
+ }
+]

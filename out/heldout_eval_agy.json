@@ -1,0 +1,559 @@
+{
+ "backend": "agy",
+ "model": "Gemini (gemini-4-argon-high, Antigravity CLI)",
+ "ran_at": "2026-11-01 14:16",
+ "heldout": {
+  "seconds": 230.7,
+  "n": 24,
+  "model_exact": 16,
+  "rule_exact": 12,
+  "mean_jaccard": 0.729,
+  "decision_changed": 5,
+  "miss": {
+   "고객 감소": 1,
+   "확장 의향": 1,
+   "가격 고민": 1,
+   "공급처 변경": 1,
+   "기기 고장": 2,
+   "배송 불만": 1,
+   "수요 증가": 1
+  },
+  "fp": {
+   "고객 감소": 1,
+   "수요 증가": 1
+  },
+  "cases": [
+   {
+    "id": "H01",
+    "text": "프린터가 자꾸 걸려서 손님들이 기다리다 가요",
+    "human": [
+     "고객 감소",
+     "기기 고장"
+    ],
+    "model": [
+     "기기 고장"
+    ],
+    "rule": [],
+    "model_exact": false,
+    "rule_exact": false,
+    "jaccard": 0.5,
+    "state_h": "위험",
+    "state_m": "위험",
+    "actions_h": [
+     "ACT01",
+     "ACT02"
+    ],
+    "actions_m": [
+     "ACT01"
+    ],
+    "decision_changed": true
+   },
+   {
+    "id": "H02",
+    "text": "요즘 커플 손님이 늘어서 주말엔 줄을 서요",
+    "human": [
+     "수요 증가"
+    ],
+    "model": [
+     "수요 증가"
+    ],
+    "rule": [],
+    "model_exact": true,
+    "rule_exact": false,
+    "jaccard": 1.0,
+    "state_h": "안정",
+    "state_m": "안정",
+    "actions_h": [],
+    "actions_m": [],
+    "decision_changed": false
+   },
+   {
+    "id": "H03",
+    "text": "증명사진만으론 안 돼서 셀프 촬영존을 들일까 고민 중이에요",
+    "human": [
+     "업태 전환",
+     "확장 의향"
+    ],
+    "model": [
+     "업태 전환"
+    ],
+    "rule": [
+     "업태 전환"
+    ],
+    "model_exact": false,
+    "rule_exact": false,
+    "jaccard": 0.5,
+    "state_h": "위험",
+    "state_m": "위험",
+    "actions_h": [
+     "ACT07"
+    ],
+    "actions_m": [
+     "ACT07"
+    ],
+    "decision_changed": false
+   },
+   {
+    "id": "H04",
+    "text": "하위 매장 주문이 줄어 창고에 인화지가 쌓여 있어요",
+    "human": [
+     "재고 부담"
+    ],
+    "model": [
+     "재고 부담"
+    ],
+    "rule": [],
+    "model_exact": true,
+    "rule_exact": false,
+    "jaccard": 1.0,
+    "state_h": "위험",
+    "state_m": "위험",
+    "actions_h": [
+     "ACT08"
+    ],
+    "actions_m": [
+     "ACT08"
+    ],
+    "decision_changed": false
+   },
+   {
+    "id": "H05",
+    "text": "인화지는 인터넷 최저가로 사고 있어요",
+    "human": [
+     "공급처 변경"
+    ],
+    "model": [
+     "공급처 변경"
+    ],
+    "rule": [
+     "공급처 변경"
+    ],
+    "model_exact": true,
+    "rule_exact": true,
+    "jaccard": 1.0,
+    "state_h": "정체",
+    "state_m": "정체",
+    "actions_h": [
+     "ACT11"
+    ],
+    "actions_m": [
+     "ACT11"
+    ],
+    "decision_changed": false
+   },
+   {
+    "id": "H06",
+    "text": "값은 오르는데 손님은 줄고 가격을 올려야 하나 싶어요",
+    "human": [
+     "가격 고민"
+    ],
+    "model": [
+     "가격 고민",
+     "고객 감소"
+    ],
+    "rule": [
+     "가격 고민"
+    ],
+    "model_exact": false,
+    "rule_exact": true,
+    "jaccard": 0.5,
+    "state_h": "위험",
+    "state_m": "위험",
+    "actions_h": [
+     "ACT06"
+    ],
+    "actions_m": [
+     "ACT02",
+     "ACT06"
+    ],
+    "decision_changed": true
+   },
+   {
+    "id": "H07",
+    "text": "행사 때 기기가 모자라서 두 대 더 빌리고 싶어요",
+    "human": [
+     "수요 증가"
+    ],
+    "model": [
+     "수요 증가"
+    ],
+    "rule": [],
+    "model_exact": true,
+    "rule_exact": false,
+    "jaccard": 1.0,
+    "state_h": "안정",
+    "state_m": "안정",
+    "actions_h": [
+     "ACT10"
+    ],
+    "actions_m": [
+     "ACT10"
+    ],
+    "decision_changed": false
+   },
+   {
+    "id": "H08",
+    "text": "2호점 자리를 알아보고 있어요",
+    "human": [
+     "확장 의향"
+    ],
+    "model": [
+     "확장 의향"
+    ],
+    "rule": [
+     "확장 의향"
+    ],
+    "model_exact": true,
+    "rule_exact": true,
+    "jaccard": 1.0,
+    "state_h": "확장",
+    "state_m": "확장",
+    "actions_h": [
+     "ACT05"
+    ],
+    "actions_m": [
+     "ACT05"
+    ],
+    "decision_changed": false
+   },
+   {
+    "id": "H09",
+    "text": "배송이 이틀 늦어서 주말 주문을 못 받았어요",
+    "human": [
+     "배송 불만"
+    ],
+    "model": [
+     "배송 불만"
+    ],
+    "rule": [
+     "배송 불만"
+    ],
+    "model_exact": true,
+    "rule_exact": true,
+    "jaccard": 1.0,
+    "state_h": "안정",
+    "state_m": "안정",
+    "actions_h": [],
+    "actions_m": [],
+    "decision_changed": false
+   },
+   {
+    "id": "H10",
+    "text": "특별히 불편한 건 없어요",
+    "human": [],
+    "model": [],
+    "rule": [],
+    "model_exact": true,
+    "rule_exact": true,
+    "jaccard": 1.0,
+    "state_h": "안정",
+    "state_m": "안정",
+    "actions_h": [],
+    "actions_m": [],
+    "decision_changed": false
+   },
+   {
+    "id": "H11",
+    "text": "프레임이 작년이랑 똑같아서 단골이 지루해해요",
+    "human": [
+     "콘텐츠 식상"
+    ],
+    "model": [
+     "콘텐츠 식상"
+    ],
+    "rule": [
+     "콘텐츠 식상"
+    ],
+    "model_exact": true,
+    "rule_exact": true,
+    "jaccard": 1.0,
+    "state_h": "정체",
+    "state_m": "정체",
+    "actions_h": [
+     "ACT03"
+    ],
+    "actions_m": [
+     "ACT03"
+    ],
+    "decision_changed": false
+   },
+   {
+    "id": "H12",
+    "text": "거래처가 늘어서 재고가 금방 빠져요",
+    "human": [
+     "수요 증가"
+    ],
+    "model": [
+     "수요 증가"
+    ],
+    "rule": [
+     "재고 부담"
+    ],
+    "model_exact": true,
+    "rule_exact": false,
+    "jaccard": 1.0,
+    "state_h": "안정",
+    "state_m": "안정",
+    "actions_h": [],
+    "actions_m": [],
+    "decision_changed": false
+   },
+   {
+    "id": "H13",
+    "text": "고장은 없는데 손님이 확 줄었어요",
+    "human": [
+     "고객 감소"
+    ],
+    "model": [
+     "고객 감소"
+    ],
+    "rule": [
+     "고객 감소",
+     "기기 고장"
+    ],
+    "model_exact": true,
+    "rule_exact": false,
+    "jaccard": 1.0,
+    "state_h": "위험",
+    "state_m": "위험",
+    "actions_h": [
+     "ACT02"
+    ],
+    "actions_m": [
+     "ACT02"
+    ],
+    "decision_changed": false
+   },
+   {
+    "id": "H14",
+    "text": "감사합니다",
+    "human": [],
+    "model": [],
+    "rule": [],
+    "model_exact": true,
+    "rule_exact": true,
+    "jaccard": 1.0,
+    "state_h": "안정",
+    "state_m": "안정",
+    "actions_h": [],
+    "actions_m": [],
+    "decision_changed": false
+   },
+   {
+    "id": "H15",
+    "text": "옆에 새 가게가 생겨서 그런지 한산해요",
+    "human": [
+     "고객 감소"
+    ],
+    "model": [
+     "고객 감소"
+    ],
+    "rule": [
+     "고객 감소"
+    ],
+    "model_exact": true,
+    "rule_exact": true,
+    "jaccard": 1.0,
+    "state_h": "위험",
+    "state_m": "위험",
+    "actions_h": [
+     "ACT02"
+    ],
+    "actions_m": [
+     "ACT02"
+    ],
+    "decision_changed": false
+   },
+   {
+    "id": "H16",
+    "text": "렌탈 단가가 좀 비싸서 다른 업체도 알아보는 중이에요",
+    "human": [
+     "가격 고민",
+     "공급처 변경"
+    ],
+    "model": [],
+    "rule": [
+     "가격 고민"
+    ],
+    "model_exact": false,
+    "rule_exact": false,
+    "jaccard": 0.0,
+    "state_h": "정체",
+    "state_m": "안정",
+    "actions_h": [],
+    "actions_m": [],
+    "decision_changed": true
+   },
+   {
+    "id": "H17",
+    "text": "카드 결제 오류가 가끔 나요",
+    "human": [
+     "기기 고장"
+    ],
+    "model": [],
+    "rule": [
+     "기기 고장"
+    ],
+    "model_exact": false,
+    "rule_exact": true,
+    "jaccard": 0.0,
+    "state_h": "안정",
+    "state_m": "안정",
+    "actions_h": [],
+    "actions_m": [],
+    "decision_changed": false
+   },
+   {
+    "id": "H18",
+    "text": "미니랩이 오래돼서 색이 예전 같지 않아요",
+    "human": [
+     "기기 고장"
+    ],
+    "model": [],
+    "rule": [],
+    "model_exact": false,
+    "rule_exact": false,
+    "jaccard": 0.0,
+    "state_h": "안정",
+    "state_m": "안정",
+    "actions_h": [],
+    "actions_m": [],
+    "decision_changed": false
+   },
+   {
+    "id": "H19",
+    "text": "주문이 늘어서 배송을 더 자주 받았으면 해요",
+    "human": [
+     "배송 불만"
+    ],
+    "model": [
+     "수요 증가"
+    ],
+    "rule": [
+     "배송 불만"
+    ],
+    "model_exact": false,
+    "rule_exact": true,
+    "jaccard": 0.0,
+    "state_h": "성장",
+    "state_m": "성장",
+    "actions_h": [],
+    "actions_m": [
+     "ACT04"
+    ],
+    "decision_changed": true
+   },
+   {
+    "id": "H20",
+    "text": "재고가 남아서 당분간 주문 안 할 거예요",
+    "human": [
+     "재고 부담"
+    ],
+    "model": [
+     "재고 부담"
+    ],
+    "rule": [
+     "재고 부담"
+    ],
+    "model_exact": true,
+    "rule_exact": true,
+    "jaccard": 1.0,
+    "state_h": "위험",
+    "state_m": "위험",
+    "actions_h": [],
+    "actions_m": [],
+    "decision_changed": false
+   },
+   {
+    "id": "H21",
+    "text": "프레임 교체는 했고 반응은 아직 모르겠어요",
+    "human": [],
+    "model": [],
+    "rule": [
+     "콘텐츠 식상"
+    ],
+    "model_exact": true,
+    "rule_exact": false,
+    "jaccard": 1.0,
+    "state_h": "안정",
+    "state_m": "안정",
+    "actions_h": [],
+    "actions_m": [],
+    "decision_changed": false
+   },
+   {
+    "id": "H22",
+    "text": "타사 인화지로 바꿔 봤는데 색이 달라서 다시 고민 중이에요",
+    "human": [
+     "공급처 변경"
+    ],
+    "model": [
+     "공급처 변경"
+    ],
+    "rule": [
+     "공급처 변경"
+    ],
+    "model_exact": true,
+    "rule_exact": true,
+    "jaccard": 1.0,
+    "state_h": "정체",
+    "state_m": "정체",
+    "actions_h": [
+     "ACT11"
+    ],
+    "actions_m": [
+     "ACT11"
+    ],
+    "decision_changed": false
+   },
+   {
+    "id": "H23",
+    "text": "다음 달 행사 세 건이라 기기를 미리 잡아 두고 싶어요",
+    "human": [
+     "수요 증가"
+    ],
+    "model": [],
+    "rule": [],
+    "model_exact": false,
+    "rule_exact": false,
+    "jaccard": 0.0,
+    "state_h": "안정",
+    "state_m": "안정",
+    "actions_h": [
+     "ACT10"
+    ],
+    "actions_m": [],
+    "decision_changed": true
+   },
+   {
+    "id": "H24",
+    "text": "기계도 자주 멈추고 손님도 줄어서 접을까 생각 중이에요",
+    "human": [
+     "고객 감소",
+     "기기 고장"
+    ],
+    "model": [
+     "고객 감소",
+     "기기 고장"
+    ],
+    "rule": [
+     "고객 감소"
+    ],
+    "model_exact": true,
+    "rule_exact": false,
+    "jaccard": 1.0,
+    "state_h": "위험",
+    "state_m": "위험",
+    "actions_h": [
+     "ACT01",
+     "ACT02"
+    ],
+    "actions_m": [
+     "ACT01",
+     "ACT02"
+    ],
+    "decision_changed": false
+   }
+  ]
+ }
+}
